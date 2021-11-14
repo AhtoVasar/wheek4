@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Gluten&display=swap');
+body {
+    background-color:rgb(243, 237, 237) ;
+   
+    
+
+}
+.heading {
+    text-align: center;
+
+    color: rgb(216, 20, 59);
+    font-family: 'Amatic SC', cursive;
+    font-size: 5rem;
+    position: relative;
+    animation: header;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  
+}
+@keyframes header{
+    0% {right: -500px;}
+    100%{right:0px;}
+}
+
+.ingredients {
+    border: black;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    position: relative;
+    animation: textLeft;
+    animation-duration: 3s;
+}
+
+@keyframes textLeft{
+    0%{left: -250px;}
+    85%{left: 0px;}
+    100%{left: 0;}
+} 
+
+
+.ingredients-tabel{
+    border: 2px solid rgb(255, 19, 19);
+    margin-left: 20rem;
+
+}
+
+.instructions {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    color: rgb(0, 255, 149);
+    animation: textRight;
+    animation-duration: 3s;
+}
+
+@keyframes textRight{
+    0%{right: -250px;}
+    85%{right: 0px;}
+    100%{right: 0;}
+} 
+
+
+.instructions ol {
+    border:  1px solid rgb(214, 0, 0);
+    margin: 0 auto;
+    width: 75%;
+  
+}
+
+ 
+
+.Link {
+    opacity: 0;
+    text-align: center;
+    animation: link;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes link{
+    0%{opacity: 0;} /*0-1*/
+    100%{opacity: 1;}
+}
+.hr {
+    border: 3px solid rgb(17, 250, 17);
+}
+
+.footer {
+    color: rgb(13, 235, 235);
+    font-family: 'Gluten', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
